@@ -1,0 +1,61 @@
+.wecome__intro {
+  p {
+    text-justify: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-indent: 25px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 12pt;
+    color: #2237b1;
+
+    @media screen and (max-width: 768px) {
+      text-justify: center;
+      padding-left: 70px;
+      margin-left: 18px;
+      letter-spacing: 1px;
+      line-height: 20px;
+      text-indent: 25px;
+      margin-bottom: 25px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 12pt;
+    }
+  }
+}
+
+.welcome__rugby {
+  img {
+    width: 900px;
+    height: 427px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    box-sizing: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px gray;
+  
+    
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 3vh;
+        box-sizing: 0;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px 5px gray;
+    }
+  }
+}

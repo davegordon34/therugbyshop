@@ -1,0 +1,51 @@
+//color scheme
+$lightGray: #f9f9f9;
+$medGray: #a9a8a8;
+$medBlue: #2237b1;
+$lightBlue: #256ce1;
+$darkBlack: #000000;
+$brightWhite: #ffffff;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.dFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    @extend .dFlex !optional;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: auto;
+    color: $medBlue;
+    font-size: 16px;
+    .social {
+        @extend .dFlex !optional;
+        font-size: 22px;
+        .fa{
+            justify-content: space-between;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 1px solid $medBlue;
+            @extend .dFlex !optional;
+            color: $darkBlack;
+            cursor: pointer;
+            +.fa{
+                margin-left: 15;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.contactus-main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+
+
+.left-column-img {
+    width: 450px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 5px 20px 20px;
+    padding: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    box-sizing: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px gray;
+    
+
+        @media screen and (max-width: 768px) {
+        width: 450px;
+        height: 475px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        margin: 0 5px 20px 20px;
+        padding: 10px;
+        margin-top: 3vh;
+        box-sizing: 0;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px 5px gray;
+        }
+    }
+}
+
+.contact-icon-info-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: left;
+
+    .icons-group {
+        justify-content: left;
+        align-items: left;
+        color: #2237b1;
+        margin-left: 35px;
+        margin-top: 3vh;
+                    
+            @media screen and (max-width: 768px) {
+            justify-content: left;
+            align-items: left;
+            color: #2237b1;
+            margin-left: 35px;
+            margin-top: 3vh;
+            }
+        }    
+            
+    p {
+        display: left;
+        justify-content: right;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 14pt;
+        font-weight: 400;
+        text-align: left;
+        color:#2237b1;
+        margin-top: -25px;
+        margin-left: 65px;
+        letter-spacing: 1px;
+        line-height: 20px;
+
+            @media screen and (max-width: 768px) {
+            display: left;
+            justify-content: left;
+            text-align: left;
+            align-items: right;
+            color: #2237b1;
+            font-size: 12pt;
+            margin-top: -25px;
+        }
+    }
+}

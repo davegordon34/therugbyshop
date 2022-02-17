@@ -1,0 +1,40 @@
+.checkout-page {
+    text-align: center;
+    
+    ::placeholder{
+        color: #2237b1;
+    }
+
+    input {
+        width: 50%;
+        border: 1px solid #dbdbdb;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fafafa;
+        box-shadow: none;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 600;
+        color: #2237b1;        
+    }
+}
+
+.checkout-page__button {
+    text-align: center;
+
+    button {
+        cursor: pointer;
+        width: 25%;
+        margin-top: 3px;
+        margin-bottom: 15px;
+        background-color: #2237b1;
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-top: 10px;
+        padding: 10px;
+        font-weight: 600;
+        border: none;
+        color: white;
+        border-radius: 5px;
+    }
+}
+

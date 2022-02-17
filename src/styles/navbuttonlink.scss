@@ -1,0 +1,16 @@
+.login-page__button {
+    text-align: center;
+
+    .NavBtnLink {
+        cursor: pointer;
+        width: 35%;
+        margin-top: 3px;
+        background-color: #2237b1;
+        font-family: 'Open Sans Condensed', sans-serif;
+        padding: 10px;
+        font-size: 10pt;
+        border: none;
+        color: white;
+        border-radius: 5px;
+    }    
+}
