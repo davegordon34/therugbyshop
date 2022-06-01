@@ -6,6 +6,7 @@ import '../styles/contactus.scss';
 
 const ContactUs = () => {
   return (
+    
     <div className='contactus-main-wrapper'>  
       <div className='left-pane-wrapper'>
           <div className='left-column-img'>

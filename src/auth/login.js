@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/signin.scss';
 import LogoPic from '../static/images/mlrballs.png';
-//import { NavLink as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { Button } from "react-bootstrap";
 import axios from 'axios';
 
 
@@ -32,7 +33,7 @@ class SignIn extends Component {
         } = this.state;
         
         axios
-            .post("http://localhost:3000/sessions", {
+            .post("https://therugbyshop.simplecodesolutions.com/phprestapi/index.php/user/authenticate", {
                 user: {
                     username: username,
                     password: password,
@@ -79,8 +80,10 @@ class SignIn extends Component {
                         </form>
                     </div>
 
-                    <div className='login-page__button'> 
-                        <button onClick={this.handleSubmit}>Log In</button>  
+                    <div className='login-page__button'>
+                        <Link to='/product'>
+                            <Button onClick={this.handleSubmit}>Log In</Button>
+                        </Link>  
                     </div>
 
                     <nav className='register'> 

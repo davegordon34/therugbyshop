@@ -15,6 +15,7 @@ import Login from './auth/login';
 import SignOut from './auth/logout';
 import CheckOut from './components/checkout/checkout';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -49,7 +50,7 @@ class App extends Component {
   
   checkLoginStatus() {
     return axios
-      .get("http://localhost:3000/logged_in", 
+      .get("https://therugbyshop.simplecodesolutions.com/phprestapi/index.php/user/authenticate", 
         { withCredentials: true })
           .then(response => {
 
@@ -97,8 +98,7 @@ class App extends Component {
           <Home />
         <Routes>
           {/* <Route
-                exact 
-                path={'/'}
+               exact path='/'
                 render={props => (
                   <Main 
                     {...props}
@@ -116,8 +116,7 @@ class App extends Component {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/signin' element={<Login />} />
           {/* <Route
-                exact
-                path={"/"}
+                exact path='/'
                 render={props => (
                   <SignOut
                     {...props}

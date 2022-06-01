@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/signup.scss';
 import LogoPic from '../static/images/mlrballs.png';
+import { Link } from 'react-router-dom';
+import { Button } from "react-bootstrap";
 import axios from 'axios';
 
 class SignUp extends Component {
@@ -37,6 +39,8 @@ class SignUp extends Component {
             password,
             confirm_password,
             email,
+            firstname,
+            lastname,
             address,
             city,
             state,
@@ -46,11 +50,13 @@ class SignUp extends Component {
         } = this.state;
         
         axios
-            .post("http://localhost:3001/", {
+            .post("https://therugbyshop.simplecodesolutions.com/phprestapi/api.php/createUser", {
                 user: {
                     username: username,
                     password: password,
                     confirm_password: confirm_password,
+                    firstname: firstname,
+                    lastname: lastname,
                     eamil: email,
                     address: address,
                     city: city,
@@ -117,6 +123,25 @@ class SignUp extends Component {
                     </form>
                 </div>
 
+                <div className='signup-page__firstname'>
+                    <form onSubmit = {this.handleSubmit}>
+                    <input type='firstname' 
+                        name='firstname' 
+                        placeholder='First Name'
+                        value={this.state.firstname} 
+                        required onChange={this.handleChange}/>
+                    </form>
+                </div>
+                <div className='signup-page__lastname'>
+                    <form onSubmit = {this.handleSubmit}>
+                    <input type='lastname' 
+                        name='lastname' 
+                        placeholder='Last Name'
+                        value={this.state.lastname} 
+                        required onChange={this.handleChange}/>
+                    </form>
+                </div>
+
                 <div className='signup-page__address'>
                     <form onSubmit = {this.handleSubmit}>
                     <input type='address' 
@@ -179,7 +204,9 @@ class SignUp extends Component {
             </div>
 
             <div className='signup-page__button'>
-                <button onClick={this.handleSubmit}>Register</button>
+                <Link to='/product'>
+                    <Button onClick={this.handleSubmit}>Register</Button>
+                </Link>
             </div>
         </div>
         )

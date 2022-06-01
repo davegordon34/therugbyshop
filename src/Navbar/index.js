@@ -18,7 +18,6 @@ export const Navbar = ({ toggle }) => {
               <NavMenu>
                 <NavLink to="/product">Products</NavLink>
                 <NavLink to="/contactus">Contact Us</NavLink>
-                <NavLink to="/account">Account</NavLink>
                 <NavLink to="/signup">Sign Up</NavLink>
               </NavMenu>
                           
